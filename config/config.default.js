@@ -11,23 +11,7 @@ module.exports = appInfo => ({
     match: '/api',
   },
 
-  cors: {
-    origin: ctx => {
-      const origin = ctx.get('origin');
-      // if (ctx.isSafeDomain && ctx.isSafeDomain(origin))
-      console.log(ctx.isSafeDomain(origin));
-      return '*';
-    },
-  },
 
   // 插件 实参
-  security: {
-    domainWhiteList: [],
-    csrf: {
-      enable: false,
-    },
-    methodnoallow: {
-      enable: false,
-    },
-  },
+
 });

@@ -6,7 +6,6 @@ module.exports = () => ({
       const origin = ctx.get('origin');
       return origin;
     },
-    credentials: true,
   },
 
   // 插件 实参
